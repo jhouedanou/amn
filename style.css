@@ -226,7 +226,6 @@ div#menuld.ym-g50 div.ym-gbox div.ym-grid div.ym-g20 *, div#decp.ym-gbox div.ym-
         position:relative;
         margin:0 auto}
     .ym-wboxfull{
-        padding: 10px 0;
         max-width:100%;
         height:auto;
         position:relative;
@@ -820,6 +819,18 @@ sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
 src='images/2.png',
 sizingMethod='scale')";
+}
+#menucontainer{
+    height:50px;
+    background:red;
+    position: absolute;
+    z-index:100;
+    width:100%;
+    bottom:0%;
+}
+.fixed{
+    position:fixed !important;
+    top:0 !important;
 }
 #ecran1-inside,#ecran2-inside{
     /*background: url(overlays/01.png) repeat;*/

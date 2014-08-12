@@ -1,0 +1,2 @@
+// JavaScript Document
+(function(e){var t=e(".accordion > dd").hide();e(".accordion > dd:first-of-type").show();e(".accordion > dt:first-of-type").addClass("accordion-active");jQuery(".accordion > dt").on("click",function(){$this=e(this);$target=$this.next();if(!$this.hasClass("accordion-active")){$this.parent().children("dd").slideUp();jQuery(".accordion > dt").removeClass("accordion-active");$this.addClass("accordion-active");$target.addClass("active").slideDown()}return false})})(jQuery)

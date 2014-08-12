@@ -30,11 +30,17 @@ function mymodule_library_alter(&$libraries, $module) {
 }
 ?>
 <?php
+	if (drupal_is_front_page()) {
+
     drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.nicescroll.min.js');
+    drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.anystretch.min.js');
     drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.localscroll-1.2.7-min.js');
    drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.parallax-1.1.3.js');
-   drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.scrollTo-1.4.6-min.js');
-  drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.superscrollorama.js');
-  drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.parallax-1.1.3.js');
-    drupal_add_js(drupal_get_path('theme', 'amn') . '/js/functions.js');
+   drupal_add_js(drupal_get_path('theme', 'amn') . '/js/greensock/TweenMax.min.js');
+   drupal_add_js(drupal_get_path('theme', 'amn') . '/js/ScrollToPlugin.min.js');
+   drupal_add_js(drupal_get_path('theme', 'amn') . '/js/jquery.scrollmagic.min.js');
+   drupal_add_js(drupal_get_path('theme', 'amn') . '/js/functions.js');
+   	  }else{
+	  }
+
 ?>
