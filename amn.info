@@ -1,0 +1,31 @@
+; SKELETON base theme
+name        = AMN
+description = An HTML5 based theme
+engine      = phptemplate
+core        = 7.x
+screenshot  = screenshot.png
+
+; FEATURES
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+
+; REGIONS
+; => core regions
+regions[content] = zone principale
+
+
+; => These regions are custom based on needing a space for block_menu Blocks
+regions[nav_main]             = Main Navigation
+regions[nav_global]           = Global Navigation
+; => Custom right rail block assignment region
+regions[sidebar_second_custom] = Custom right rail content
+
+; STYLESHEETS
+stylesheets[all][] = style.css
+; Set the conditional stylesheets that are processed by IE.
+stylesheets-conditional[lt IE 7][all][] = css/iehacks.min.css
+stylesheets-conditional[IE 9][all][] =css/ie.css
